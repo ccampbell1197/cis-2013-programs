@@ -4,4 +4,7 @@ floatDays = floatAge*365.25;
 floatMonths = floatAge*12
 intWeeks = floatDays/7
 intFortnights = floatDays/14
-alert(floatAge + floatDays + floatMonths + intFortnights + intWeeks)
+alert(floatAge)
+alert(floatDays)
+alert(intWeeks)
+alert(intFortnights)
