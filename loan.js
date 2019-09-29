@@ -5,17 +5,17 @@ var $ = function (id)
 
 
  
- var calculate = function(id)
+ var calculate = function()
  {
     var floatMonthlyPayment, intLoanTerm, floatTotalCost;
     floatMonthlyPayment = parseFloat($("monthly_payment").value);
-    intLoanTerm = parseInt($(loan_length).value);
-    floatTotalCost = parseFloat(floatMonthlyPayment*intLoanTerm);
+    intLoanTerm = parseInt($("loan_length").value);
+    floatTotalCost = parseFloat(floatMonthlyPayment * intLoanTerm);
     $("total_cost").value = floatTotalCost;
     
  }
  
- window.onload = function (id) 
+ window.onload = function () 
 {
     $("loan_length").value = "";
     $("total_cost").value = "";
