@@ -26,11 +26,11 @@ var calculate_click = function ()
     if (intGradeOption===1)
 {
     if(floatTotalPts >= 80){
-    $("final_grade").value = Pass;
+    $("final_grade").value = "Pass";
     }
     else
     {
-    $("final_grade").value = Fail;
+    $("final_grade").value = "Fail";
     }
     }
    // selected graded option
@@ -63,7 +63,6 @@ var calculate_click = function ()
     
     
     
-  
     
 
 
