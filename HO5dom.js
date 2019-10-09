@@ -4,8 +4,9 @@ var $ = function (id)
 };
 
 var calculate_click = function () 
-{};
+{
     var floatHwPts;
+
 
     floatHwPts = parseFloat($("hw_pts").value);
     
@@ -24,6 +25,7 @@ var calculate_click = function ()
     var intGradeOption = parseFloat($("grade_option").value);
     
     if (intGradeOption===1)
+
 {
     if(floatTotalPts >= 80){
     $("final_grade").value = "Pass";
@@ -58,14 +60,15 @@ var calculate_click = function ()
    }
    
    else{
-   $("final_grade").value = "F";
+   $("final_grade").value = "F";}
     
     
     
     
     
-   }
 
+
+};
 
 window.onload = function () 
 {
