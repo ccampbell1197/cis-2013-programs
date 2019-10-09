@@ -21,16 +21,46 @@ var calculate_click = function ()
     
     floatTotalPts = floatHwPts + floatMidPts + floatFinPts;
     
-    if ($(grade_value).value)===1)
+    var intGradeOption = parseFloat($("grade_option").value);
+    
+    if (intGradeOption===1)
 {
     if(floatTotalPts >= 80){
-    ($("final_grade").value = "Pass");
+    alert("You Passed");
     }
     else
     {
-    ($("final_grade").value = "Fail");
+    alert("You Failed");
     }
     }
+   // selected graded option
+   
+   
+   if (intGradeOption===2)
+   
+   if(floatTotalPts >= 90){
+   stringFinalGrade = "A";
+   }
+
+   else if(floatTotalPts >= 80 && floatTotalPts<90)
+   {
+   stringFinalGrade = "B";
+   }
+   
+   else if(floatTotalPts >= 70 && floatTotalPts<80)
+   {
+   stringFinalGrade = "C";
+   }
+   
+   else if(floatTotalPts >= 60 && floatTotalPts<70)
+   {
+   stringFinalGrade = "D";
+   }
+   
+   else{
+   stringFinalGrade = "F";}
+    
+    
     
     
     
