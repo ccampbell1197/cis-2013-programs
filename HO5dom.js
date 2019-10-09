@@ -4,7 +4,7 @@ var $ = function (id)
 };
 
 var calculate_click = function () 
-{
+{};
     var floatHwPts;
 
     floatHwPts = parseFloat($("hw_pts").value);
@@ -39,34 +39,33 @@ var calculate_click = function ()
    if (intGradeOption===2)
    
    if(floatTotalPts >= 90){
-   stringFinalGrade = "A";
+   $("final_grade").value = "A";
    }
 
    else if(floatTotalPts >= 80 && floatTotalPts<90)
    {
-   stringFinalGrade = "B";
+   $("final_grade").value = "B";
    }
    
    else if(floatTotalPts >= 70 && floatTotalPts<80)
    {
-   stringFinalGrade = "C";
+   $("final_grade").value = "C";
    }
    
    else if(floatTotalPts >= 60 && floatTotalPts<70)
    {
-   stringFinalGrade = "D";
+   $("final_grade").value = "D";
    }
    
    else{
-   stringFinalGrade = "F";}
+   $("final_grade").value = "F";
     
     
     
     
     
+   }
 
-
-};
 
 window.onload = function () 
 {
