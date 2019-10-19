@@ -41,17 +41,17 @@ var fixPrinter = function() {
             {
             stringOutput = stringMessage5;
             }
-            }
-        else
-        {
-        if (boolRedLight = true)
-        {
-        if (boolRecognised = true)
-        }
+            
+
+        
+        if (boolRedLight === true)
+        
+        if (boolRecognised === true)
+        
         {
            stringOutput = stringMessage4 + stringMessage5;
         }
-        }
+        
         else
         {
             stringOutput = stringMessage4;
@@ -78,6 +78,3 @@ var fixPrinter = function() {
     var boolRecognised = $("not_recognised").selected;  ////returns a value of true only when the not_recognized html id is selected from the dropdown menu
 
     //enter your code here and don't forget to send the output to the DOM
-
-window.onload = function () {
-    $("troubleshoot").onclick = fixPrinter;
