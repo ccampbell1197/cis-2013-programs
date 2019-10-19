@@ -56,7 +56,7 @@ var fixPrinter = function() {
         else
         stringoutput = stringMessage6;
         
-        $("output").value = stringoutput;
+        $("output").value = stringOutput;
 
     /* Need to be careful here when defining our boolean variables for use in the troubleshooting chart
      * and what you define as true or false.  For example, in the chart used in this problem,
