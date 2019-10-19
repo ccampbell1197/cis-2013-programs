@@ -21,7 +21,49 @@ var fixPrinter = function() {
                         {
                             stringOutput = stringMessage2 + stringMessage3 +stringMessage4;
                         }
-                    
+                    else
+                    {
+                        stringOutput = stringMessage4 + stringMessage5;
+                    }
+            }
+            
+    
+            else
+            {
+            if (boolRecognised === true)
+                {
+                  stringOutput = stringMessage1+stringMessage2+stringMessage3;      
+                }
+            }
+        }
+            
+        else
+            {
+            stringOutput = stringMessage5;
+            }
+            }
+        else
+        {
+        if (boolRedLight = true)
+        {
+        if (boolRecognised = true)
+        }
+        {
+           stringOutput = stringMessage4 + stringMessage5;
+        }
+        }
+        else
+        {
+            stringOutput = stringMessage4;
+        }
+        if(boolRecognized === true)
+        {
+            stringOutput = stringMessage3;
+        }
+        else
+        {
+        stringoutput = stringMessage6;
+        }
         
         $("output").value = stringOutput;
 
