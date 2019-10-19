@@ -83,3 +83,4 @@ var fixPrinter = function() {
 
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
+$("output").value = stringOutput;
