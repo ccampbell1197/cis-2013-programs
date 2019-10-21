@@ -12,8 +12,6 @@ var fixPrinter = function() {
     var stringMessage4 = "Check / replace ink.";
     var stringMessage5 = "Check for paper jam.";
     var stringMessage6 = "Looks like everything is working fine!";
-    
-    
 
     /* Need to be careful here when defining our boolean variables for use in the troubleshooting chart
      * and what you define as true or false.  For example, in the chart used in this problem,
@@ -27,60 +25,34 @@ var fixPrinter = function() {
 
     //enter your code here and don't forget to send the output to the DOM
     
-    if(boolPrinting === true)
-        {
-            if(boolRedLight === true)
-            {
-                    if(boolRecognised === true)
-                        {
-                            stringOutput = stringMessage2 + stringMessage3 +stringMessage4;
-                        }
-                    else
-                    {
-                        stringOutput = stringMessage4 + stringMessage5;
-                    }
-            }
-            
-    
-            else
-            {
-            if (boolRecognised === true)
-                {
-                  stringOutput = stringMessage1+stringMessage2+stringMessage3;      
-                }
-            }
-        }
-            
-        else
-            {
+    switch (true) {
+        case boolPrinting === true && boolRedLight === true && boolRecognised === true:
+            stringOutput = stringMessage2 + stringMessage3 + stringMessage4;
+            break;
+        case boolPrinting === true  && boolRedLight === true && boolRecognised === false:
+            stringOutput = stringMessage4 + stringMessage5
+            break;
+        case boolPrinting === true && boolRedLight === false && boolRecognised === true:
+            stringOutput = stringMessage1 + stringMessage2 + stringMessage3
+            break;
+        case boolPrinting === true && boolRedLight === false && boolRecognised === false:
             stringOutput = stringMessage5;
-            }
-            
-
-        
-        if (boolRedLight === true)
-        
-        if (boolRecognised === true)
-        
-        {
-           stringOutput = stringMessage4 + stringMessage5;
-        }
-        
-        else
-        {
+            break;
+        case boolPrinting === false  && boolRedLight === true && boolRecognised === true:
+            stringOutput = stringMessage4 + stringMessage3
+            break;
+        case boolPrinting ===  false && boolRedLight === true && boolRecognised === false :
             stringOutput = stringMessage4;
-        }
-        if(boolRecognized === true)
-        {
+            break;
+        case boolPrinting === false && boolRedLight === false && boolRecognised === true:
             stringOutput = stringMessage3;
-        }
-        else
-        {
-        stringoutput = stringMessage6;
-        }
-        
-        $("output").value = stringOutput;
-
+            break;
+        case boolPrinting === false && boolRedLight === false && boolRecognised === false:
+            stringOutput = stringMessage6;
+            break;  
+    }
+    $("output").value = stringOutput;
+    
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
-$("output").value = stringOutput;
+};
