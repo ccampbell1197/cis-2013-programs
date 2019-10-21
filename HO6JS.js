@@ -51,6 +51,7 @@ var fixPrinter = function() {
             stringOutput = stringMessage6;
             break;  
     }
+}
     $("output").value = stringOutput;
     
 window.onload = function () {
