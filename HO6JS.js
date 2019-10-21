@@ -52,7 +52,7 @@ var fixPrinter = function() {
             break;  
     }
     $("output").value = stringOutput;
-}
+};
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
 };
