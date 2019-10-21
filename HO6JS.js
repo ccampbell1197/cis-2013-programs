@@ -30,16 +30,16 @@ var fixPrinter = function() {
             stringOutput = stringMessage2 + stringMessage3 + stringMessage4;
             break;
         case boolPrinting === true  && boolRedLight === true && boolRecognised === false:
-            stringOutput = stringMessage4 + stringMessage5
+            stringOutput = stringMessage4 + stringMessage5;
             break;
         case boolPrinting === true && boolRedLight === false && boolRecognised === true:
-            stringOutput = stringMessage1 + stringMessage2 + stringMessage3
+            stringOutput = stringMessage1 + stringMessage2 + stringMessage3;
             break;
         case boolPrinting === true && boolRedLight === false && boolRecognised === false:
             stringOutput = stringMessage5;
             break;
         case boolPrinting === false  && boolRedLight === true && boolRecognised === true:
-            stringOutput = stringMessage4 + stringMessage3
+            stringOutput = stringMessage4 + stringMessage3;
             break;
         case boolPrinting ===  false && boolRedLight === true && boolRecognised === false :
             stringOutput = stringMessage4;
@@ -51,9 +51,8 @@ var fixPrinter = function() {
             stringOutput = stringMessage6;
             break;  
     }
-}
     $("output").value = stringOutput;
-    
+}
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
 };
