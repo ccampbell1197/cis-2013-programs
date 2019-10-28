@@ -98,26 +98,7 @@ var calcTrianglePerim = function()
     alert ("The triangle area is" + trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3));
 };
 
-var calc = function () 
-{
 
-var floatRectWidth = parseFloat($("rect_width").value);
-	var floatRectHeight = parseFloat($("rect_height").value);	
-	var floatTriSide1 = parseFloat($("tri_side1").value);
-	var floatTriSide2 = parseFloat($("tri_side2").value);	
-	var floatTriSide3 = parseFloat($("tri_side3").value);
-	var floatRadius = parseFloat($("radius").value);
-
-alert ("The Rectangle area is " + rectArea(floatRectWidth,floatRectHeight) + 
-	" and the perimeter is " + rectPerim (floatRectWidth,floatRectHeight) + 
-	"\n\n" + "The Triangle area is " + 	triangleArea(floatTriSide1,floatTriSide2,floatTriSide3) + 
-	" and the perimeter is " + 
-	trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3) + "\n\n" +
-	"The Circle area is " + circleArea(floatRadius) + 
-	" and the circumference is " + circleCircum(floatRadius));
-
-
-};
 
 
 window.onload = function () 
