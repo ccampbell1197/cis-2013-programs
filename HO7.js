@@ -118,7 +118,7 @@ window.onload = function ()
     //lines 51-56 clear the DOM values..
     $("rect_width").value = "";
     $("rect_height").value = "";
-  $("tri_side1").value = "";
+   $("tri_side1").value = "";
     $("tri_side2").value = "";
     $("tri_side3").value = "";
     $("radius").value = "";
@@ -130,4 +130,5 @@ window.onload = function ()
     $("calc_rect_perim").onclick = calcRectPerim;
     $("calc_tri_area").onclick = calcTriangleArea;
     $("calc_tri_perim").onclick = calcTrianglePerim;
+    $("calc_all").onclick = do_it;
 };
