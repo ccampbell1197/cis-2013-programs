@@ -93,7 +93,7 @@ function rectperim(floatRectHeight,floatRectWidth)
     alert ("The Rectangle Perimeter is " + rectperim(floatRectHeight,floatRectWidth));	
 };
 
-function triangleArea()
+function triangleArea(floatTriSide1,floatTriSide2,floatTriSide3)
 {
 	floatTriangleArea = Math.sqrt((floatS*(floatS-floatTriSide1)*(floatS-floatTriSide2)*(floatS-floatTriSide3)));
     return floatTriangleArea.toFixed(2);
@@ -126,3 +126,4 @@ window.onload = function ()
     $("calc_rect_area").onclick = calcRectArea;
     $("calc_rect_perim").onclick = calcRectPerim;
     $("calc_tri_area").onclick = calcTriangleArea;
+};
