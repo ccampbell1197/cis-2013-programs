@@ -5,7 +5,7 @@ var $ = function (id)
 };
 
 //this function performs all the circle, triangle, and circle calculations and prints the results
-var do_it = function () 
+var calc = function () 
 {
 
 alert ("The Rectangle area is " + rectArea(floatRectWidth,floatRectHeight) + 
@@ -130,5 +130,5 @@ window.onload = function ()
     $("calc_rect_perim").onclick = calcRectPerim;
     $("calc_tri_area").onclick = calcTriangleArea;
     $("calc_tri_perim").onclick = calcTrianglePerim;
-    $("calc_all").onclick = do_it;
+    $("calc_all").onclick = calc;
 };
