@@ -5,19 +5,7 @@ var $ = function (id)
 };
 
 //this function performs all the circle, triangle, and circle calculations and prints the results
-var calc = function () 
-{
 
-alert ("The Rectangle area is " + rectArea(floatRectWidth,floatRectHeight) + 
-	" and the perimeter is " + rectPerim (floatRectWidth,floatRectHeight) + 
-	"\n\n" + "The Triangle area is " + 	triangleArea(floatTriSide1,floatTriSide2,floatTriSide3) + 
-	" and the perimeter is " + 
-	trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3) + "\n\n" +
-	"The Circle area is " + circleArea(floatRadius) + 
-	" and the circumference is " + circleCircum(floatRadius));
-
-
-};
 
 /*
  * the calcCircleCircum function is activated when the calc_circle_cirum button on the DOM
@@ -110,7 +98,19 @@ var calcTrianglePerim = function()
     alert ("The triangle area is" + trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3));
 };
 
+var calc = function () 
+{
 
+alert ("The Rectangle area is " + rectArea(floatRectWidth,floatRectHeight) + 
+	" and the perimeter is " + rectPerim (floatRectWidth,floatRectHeight) + 
+	"\n\n" + "The Triangle area is " + 	triangleArea(floatTriSide1,floatTriSide2,floatTriSide3) + 
+	" and the perimeter is " + 
+	trianglePerim(floatTriSide1,floatTriSide2,floatTriSide3) + "\n\n" +
+	"The Circle area is " + circleArea(floatRadius) + 
+	" and the circumference is " + circleCircum(floatRadius));
+
+
+};
 
 
 window.onload = function () 
