@@ -6,7 +6,7 @@ intQuit = 2
 intQuit = parseInt (prompt("Press 1 to quit, press any enter to play."));
 while (intQuit !== 1){
 
-// This code prompts input for minimum and maximum values
+// This code prompts input for minimum and maximum vlues
 
 
 
@@ -67,9 +67,6 @@ intPrior.push(intGuess); //prompts guess input
     
    alert ("Your guess is too low!");
    ++intCount;
-   if (intGuess=intPrior){
-  alert ("you already chose that one");
-    };
    intGuess=parseInt(prompt("Please enter a higher guess"));
     intPrior.push(intGuess);
     
@@ -82,7 +79,7 @@ alert("Congratulations!!! You guessed the correct number (" + intRandom +")\n" +
 		" and it only took you " + intCount + " attempts! Your score is " + floatScore + "Your guesses were "+intPrior);
 
 intQuit = parseInt (prompt("Press 1 to quit, press any enter to play."));
-};
+};// Loop code/ Sentinel value
 
 
 
